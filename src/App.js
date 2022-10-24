@@ -4,6 +4,9 @@ import Sidebar from "./Sidebar";
 import Topbar from "./Topbar";
 import Dashboard from "./Dashboard";
 import User from "./User";
+import Createuser from "./Createuser";
+import ViewUser from "./ViewUser";
+import EditUser from "./EditUser";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import './Css/sb-admin-2.css';
 import './Css/fontawesome-free/css/all.css';
@@ -22,6 +25,9 @@ function App() {
         <Routes>
         <Route path='/Dashboard' element={<Dashboard/>}></Route>
           <Route path='/User' element={<User/>}></Route>
+          <Route path='/Create_User' element={<Createuser/>}></Route>
+          <Route path='/User/:id' element={<ViewUser/>}></Route>
+          <Route path='/Edit_User/:id' element={<EditUser/>}></Route>
         </Routes>
       </div>
       </div>
